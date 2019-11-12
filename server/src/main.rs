@@ -4,7 +4,7 @@ use std::net::TcpStream;
 use std::io::Read;
 use std::io::Write;
 
-fn new_client(mut stream: TcpStream) {
+fn new_client_and_close(mut stream: TcpStream) {
     println!("Client connected {}", stream.peer_addr().unwrap());
     let mut data: [u8; 32] = [0; 32];
 
