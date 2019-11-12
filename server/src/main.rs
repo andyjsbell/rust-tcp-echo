@@ -1,5 +1,5 @@
-mod server;
+extern crate server;
 
 fn main() {
-    server::run();
+    server::server::run();
 }
